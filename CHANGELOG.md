@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2024-04-25)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/mikiot/uapi-node/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* **api:** update via SDK Studio ([#3](https://github.com/mikiot/uapi-node/issues/3)) ([ba18487](https://github.com/mikiot/uapi-node/commit/ba18487ecd382195dc8ecf23b1c27a595b4d20e4))
+
 ## 0.1.0-alpha.1 (2024-04-25)
 
 Full Changelog: [v0.0.1-alpha.0...v0.1.0-alpha.1](https://github.com/mikiot/uapi-node/compare/v0.0.1-alpha.0...v0.1.0-alpha.1)

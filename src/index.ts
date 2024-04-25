@@ -72,7 +72,7 @@ export class Uapi extends Core.APIClient {
   /**
    * API Client for interfacing with the Uapi API.
    *
-   * @param {string} [opts.baseURL=process.env['UAPI_BASE_URL'] ?? https://10-150-25-29.4grid.eu/uapi] - Override the default base URL for the API.
+   * @param {string} [opts.baseURL=process.env['UAPI_BASE_URL'] ?? https://10-150-25-29.4grid.eu/uapi/] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {number} [opts.httpAgent] - An HTTP agent used to manage HTTP(s) connections.
    * @param {Core.Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -83,7 +83,7 @@ export class Uapi extends Core.APIClient {
   constructor({ baseURL = Core.readEnv('UAPI_BASE_URL'), ...opts }: ClientOptions = {}) {
     const options: ClientOptions = {
       ...opts,
-      baseURL: baseURL || `https://10-150-25-29.4grid.eu/uapi`,
+      baseURL: baseURL || `https://10-150-25-29.4grid.eu/uapi/`,
     };
 
     super({

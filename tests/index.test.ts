@@ -139,13 +139,13 @@ describe('instantiate client', () => {
     test('empty env variable', () => {
       process.env['UAPI_BASE_URL'] = ''; // empty
       const client = new Uapi({});
-      expect(client.baseURL).toEqual('https://10-150-25-29.4grid.eu/uapi');
+      expect(client.baseURL).toEqual('https://10-150-25-29.4grid.eu/uapi/');
     });
 
     test('blank env variable', () => {
       process.env['UAPI_BASE_URL'] = '  '; // blank
       const client = new Uapi({});
-      expect(client.baseURL).toEqual('https://10-150-25-29.4grid.eu/uapi');
+      expect(client.baseURL).toEqual('https://10-150-25-29.4grid.eu/uapi/');
     });
   });
 

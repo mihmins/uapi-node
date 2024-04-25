@@ -1,0 +1,32 @@
+name: CI
+on:
+  push:
+    branches:
+      - stainless
+  pull_request:
+    branches:
+      - stainless
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          yarn install
+
+      - name: Check types
+        run: |
+          yarn build
+
+  
